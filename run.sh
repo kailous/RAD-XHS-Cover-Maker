@@ -64,9 +64,9 @@ echo "复制 $output2 为 $output3"
 convert -delay 1x6000 "$output1" -delay 100x1 "$output2" -delay 100x1 "$output3" -loop 0 "$output_webp"
 echo "生成 $output_webp 动画"
 
-# 打包 output.webp 和 png 文件成 zip 文件
-zip -j "$output_zip" "$output_webp" "$output1" "$output2" "$output3"
-echo "打包 $output_webp 和 PNG 文件成 $output_zip"
+# 打包 output.webp 文件成 zip 文件
+zip -j "$output_zip" "$output_webp"
+echo "打包 $output_webp 文件成 $output_zip"
 
 # 删除隐藏的临时文件夹 .temp
 rm -rf .temp
