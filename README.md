@@ -3,7 +3,7 @@
 
 ## 概述
 
-`RAD-XHS-Cover-Maker` 是一个用于在 macOS 上自动合成和处理图片的 Automator 脚本。该脚本旨在帮助 RAD 团队创建小红书动态封面，并通过 `ImageMagick` 进行图片合成。
+`RAD-XHS-Cover-Maker` 是一个用于在 macOS 上自动合成和处理图片的 Automator 脚本。该脚本帮助 RAD 团队创建小红书动态封面，并通过 `ImageMagick` 进行图片合成。
 
 ## 下载
 
@@ -17,11 +17,9 @@
 
 下载并解压缩 `Automator.zip` 文件。您将获得一个 `.workflow` 文件，这是 Automator 脚本。
 
-### 2. 将工作流程文件添加到 Automator
+### 2. 双击安装脚本
 
-1. 打开 `Automator.app`。
-2. 从菜单中选择 `File > Import Workflows...`（文件 > 导入工作流程...）。
-3. 选择解压后的 `.workflow` 文件并导入。
+双击 `.workflow` 文件，以安装自动化脚本。
 
 ## 使用
 
@@ -41,11 +39,10 @@ brew install imagemagick
 
 ### 2. 运行 Automator 工作流程
 
-1. 打开 `Automator.app`。
-2. 选择导入的工作流程。
-3. 将您想要处理的图片文件拖放到 Automator 工作流程中。
-4. 提供必要的参数（例如输出宽度）。
-5. 运行工作流程。
+1. 在需要生成封面的图片上右键选择 `快速操作`。
+2. 选择 `小红书封面` 并点击运行。
+3. 等待完成后得到 `output.webp` 封面文件和压缩包。
+4. 分享封面文件时请使用压缩包，以防动画失效。
 
 ### 3. 检查日志文件
 
